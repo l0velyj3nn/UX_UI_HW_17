@@ -1,6 +1,49 @@
 body {
         background-color: #85A45C;
     }
+
 p   {
     color: darkorange;
 }  
+
+.d-inline-flex {
+    display: inline-flex;
+    gap: 5px;
+  }
+  
+  .bg-skew-frame {
+    position: relative;
+    padding: 5px;
+  }
+  
+  .bg-skew-frame::before {
+    content: '';
+    background: #ccc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: skew(-5deg);
+  }
+  
+  .bg-skew-window {
+    position: relative;
+  }
+  
+  .bg-skew-window::before {
+    content: '';
+    background: teal;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: skew(-5deg);
+  }
+  
+  .bg-skew-window__content {
+    position: relative;
+    padding: 10px;
+  }
+  
