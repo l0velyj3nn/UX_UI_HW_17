@@ -1,11 +1,32 @@
+/* This is Jenn's CSS Style Sheet */
+
+/* Setting the stage (background) */
 body {
-        background-color: #85A45C;
+        background-image: url("images/ladder_girl.svg");
+        background-position: top 0px left 10px;
+        background-color: #F2EADF;
     }
 
-p   {
-    color: darkorange;
-}  
+/* Footer */
+.footer-menu-style {
+    display: inline-block;
+    width: 50%;
+    height: 100px;
+    padding: 5px;
+}
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li {
+    float: right;
+  }
+
+/* Skewed homepage boxes */
 .d-inline-flex {
     display: inline-flex;
     gap: 5px;
