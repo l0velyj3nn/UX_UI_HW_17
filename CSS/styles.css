@@ -9,33 +9,28 @@ body {
 
 /* Footer */
 #puttingFinFooter {
-    height: 250px;
+  height: 250px;
 }
 
 .footerBlock {
-    display: inline-block;
-    padding: 20px;
+  display: inline-block;
+  padding: 20px;
 }
 
-
-/* The way that didn't work */
-.footer-menu-style {
-    display: inline-block;
-    width: 50%;
-    height: 100px;
-    padding: 5px;
+/* getting griddy with it */
+.wrapper {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(6, 1fr);
 }
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-
-  li {
-    float: right;
-  }
+.foot-menu {
+grid-column: 2 / 4;
+grid-row: 6;
+}
+.social-menu {
+grid-column: 5;
+grid-row: 6;
+}
 
 /* Skewed homepage boxes */
 .d-inline-flex {
